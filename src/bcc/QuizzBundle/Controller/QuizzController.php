@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class QuizzController extends Controller
 {
-    public function indexAction()
+    public function indexAction($page)
     {
     	// On ne sait pas combien de pages il y a
     // Mais on sait qu'une page doit être supérieure ou égale à 1
