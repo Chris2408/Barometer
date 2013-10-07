@@ -8,7 +8,19 @@ class QuizzController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('bccQuizzBundle:Quizz:index.html.twig');
+    	// On ne sait pas combien de pages il y a
+    // Mais on sait qu'une page doit être supérieure ou égale à 1
+    if( $page < 1 )
+    {
+      // On déclenche une exception NotFoundHttpException
+      // Cela va afficher la page d'erreur 404 (on pourra personnaliser cette page plus tard d'ailleurs)
+      throw $this->createNotFoundException('Page inexistante (page = '.$page.')');
+    }
+ 
+    // Ici, on récupérera la liste des articles, puis on la passera au template
+ 
+    // Mais pour l'instant, on ne fait qu'appeler le template
+    return $this->render('bccQuizzBundle:Quizz:index.html.twig');
     }
 	
 	public function seeAction($id)
