@@ -2,7 +2,7 @@
 
 namespace bcc\QuizzBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Barometer\Bundle\FrameworkBundle\Controller\Controller;
 
 class QuizzController extends Controller
 {
