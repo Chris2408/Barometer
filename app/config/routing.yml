@@ -8,7 +8,7 @@ bcc_quizz:
 
 login:
     pattern:   /login
-    defaults:  { _controller: SdzUserBundle:Security:login }
+    defaults:  { _controller: bccUserBundle:Security:login }
 
 login_check:
     pattern:   /login_check
