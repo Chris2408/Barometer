@@ -283,19 +283,11 @@ class appDevDebugProjectContainer extends Container
      * This service is shared.
      * This method always returns the same instance of the service.
      *
-<<<<<<< HEAD
-     * @return EntityManager52527d982960b_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager52527d982960b_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
+     * @return EntityManager5252837b3fb23_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager5252837b3fb23_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
      */
     protected function getDoctrine_Orm_DefaultEntityManagerService()
     {
-        require_once 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52527d982960b.php';
-=======
-     * @return EntityManager5252fcbfca617_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager5252fcbfca617_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
-     */
-    protected function getDoctrine_Orm_DefaultEntityManagerService()
-    {
-        require_once 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_5252fcbfca617.php';
->>>>>>> f16217536da1384bf80d91a5197c95888367c2c0
+        require_once 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_5252837b3fb23.php';
 
         $a = new \Doctrine\Common\Cache\ArrayCache();
         $a->setNamespace('sf2orm_default_8e8d4f2db7870693eb08e01b6751d397');
@@ -322,11 +314,7 @@ class appDevDebugProjectContainer extends Container
         $e = call_user_func(array('Doctrine\\ORM\\EntityManager', 'create'), $this->get('doctrine.dbal.default_connection'), $d);
         $this->get('doctrine.orm.default_manager_configurator')->configure($e);
 
-<<<<<<< HEAD
-        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager52527d982960b_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($e, $this);
-=======
-        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager5252fcbfca617_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($e, $this);
->>>>>>> f16217536da1384bf80d91a5197c95888367c2c0
+        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager5252837b3fb23_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($e, $this);
     }
 
     /**
@@ -2833,11 +2821,7 @@ class appDevDebugProjectContainer extends Container
     /**
      * Gets the doctrine.orm.entity_manager service alias.
      *
-<<<<<<< HEAD
-     * @return EntityManager52527d982960b_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
-=======
-     * @return EntityManager5252fcbfca617_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
->>>>>>> f16217536da1384bf80d91a5197c95888367c2c0
+     * @return EntityManager5252837b3fb23_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
      */
     protected function getDoctrine_Orm_EntityManagerService()
     {
@@ -3645,7 +3629,7 @@ class appDevDebugProjectContainer extends Container
             'assetic.variables' => array(
 
             ),
-            'assetic.java.bin' => 'C:\\Program Files (x86)\\Java\\jdk1.7.0_40\\bin\\java.EXE',
+            'assetic.java.bin' => 'C:\\WINDOWS\\system32\\java.EXE',
             'assetic.node.bin' => '/usr/bin/node',
             'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
@@ -3749,13 +3733,8 @@ class appDevDebugProjectContainer extends Container
             'jms_di_extra.cache_warmer.controller_file_blacklist' => array(
 
             ),
-<<<<<<< HEAD
-            'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52527d982960b.php',
-            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager52527d982960b_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
-=======
-            'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_5252fcbfca617.php',
-            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager5252fcbfca617_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
->>>>>>> f16217536da1384bf80d91a5197c95888367c2c0
+            'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_5252837b3fb23.php',
+            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager5252837b3fb23_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
             'security.secured_services' => array(
 
             ),
