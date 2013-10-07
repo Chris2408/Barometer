@@ -488,8 +488,13 @@
     <parameter key="jms_di_extra.disable_grep">false</parameter>
     <parameter key="jms_di_extra.doctrine_integration">true</parameter>
     <parameter key="jms_di_extra.cache_warmer.controller_file_blacklist" type="collection"/>
+<<<<<<< HEAD
     <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52529cd82a46e.php</parameter>
     <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager52529cd82a46e_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
+=======
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_525316e7e706a.php</parameter>
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager525316e7e706a_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
+>>>>>>> 807ec43c075f3e82e640a73f13aafe5262d5ecbc
     <parameter key="security.secured_services" type="collection"/>
     <parameter key="security.access.method_interceptor.class">JMS\SecurityExtraBundle\Security\Authorization\Interception\MethodSecurityInterceptor</parameter>
     <parameter key="security.access.method_access_control" type="collection"/>
@@ -1604,7 +1609,11 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
+<<<<<<< HEAD
             <argument>52529cd7f2c28</argument>
+=======
+            <argument>525316e7b4d11</argument>
+>>>>>>> 807ec43c075f3e82e640a73f13aafe5262d5ecbc
           </service>
         </argument>
       </argument>
@@ -1876,7 +1885,11 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
+<<<<<<< HEAD
             <argument>52529cd7f2c28</argument>
+=======
+            <argument>525316e7b4d11</argument>
+>>>>>>> 807ec43c075f3e82e640a73f13aafe5262d5ecbc
             <argument type="service" id="monolog.logger.security"/>
           </service>
         </argument>
@@ -2260,8 +2273,13 @@
       <argument type="collection"/>
       <argument type="collection"/>
     </service>
+<<<<<<< HEAD
     <service id="doctrine.orm.default_entity_manager" class="EntityManager52529cd82a46e_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
       <file>C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52529cd82a46e.php</file>
+=======
+    <service id="doctrine.orm.default_entity_manager" class="EntityManager525316e7e706a_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
+      <file>C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_525316e7e706a.php</file>
+>>>>>>> 807ec43c075f3e82e640a73f13aafe5262d5ecbc
       <argument type="service">
         <service class="Doctrine\ORM\EntityManager" factory-method="create" public="false">
           <argument type="service" id="doctrine.dbal.default_connection"/>
