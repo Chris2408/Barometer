@@ -1,3 +1,9 @@
 bcc_quizz_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: bccQuizzBundle:Default:index }
+    pattern:  /{page}
+    defaults: { _controller: bccQuizzBundle:Quizz:index, page: 1 }
+    requirements:
+        page:  \d*
+
+sdzblog_voir:
+    path:      /question/{id}
+    defaults:  { _controller: bccQuizzBundle:Quizz:voir }
