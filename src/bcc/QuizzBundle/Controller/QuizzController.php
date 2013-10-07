@@ -8,10 +8,10 @@ class QuizzController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('bccQuizzBundle:Default:index.html.twig');
+        return $this->render('bccQuizzBundle:Quizz:index.html.twig');
     }
 	
-	public function voirAction($id)
+	public function seeAction($id)
   	{
     // Ici, on récupérera l'article correspondant à l'id $id
      
@@ -19,4 +19,6 @@ class QuizzController extends Controller
       'id' => $id
     ));
   	}
+	
+	
 }
