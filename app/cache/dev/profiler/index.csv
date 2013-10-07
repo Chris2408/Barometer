@@ -68,3 +68,5 @@ fadaab,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381176385,
 554ebf,::1,GET,http://localhost/Barometer/web/app_dev.php/3,1381176389,
 83c8c7,::1,GET,http://localhost/Barometer/web/app_dev.php/add,1381176392,
 >>>>>>> 22882a5e2d88cdfa153db9b0dd13abb72c579d8a
+bf31b0,::1,GET,http://localhost/Barometer/web/app_dev.php/add,1381177065,
+aab03a,::1,GET,http://localhost/Barometer/web/app_dev.php/modifie/3,1381177073,
