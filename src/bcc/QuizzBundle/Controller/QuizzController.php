@@ -4,11 +4,11 @@ namespace bcc\QuizzBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class DefaultController extends Controller
+class QuizzController extends Controller
 {
-    public function indexAction($name)
+    public function indexAction()
     {
-        return $this->render('bccQuizzBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('bccQuizzBundle:Default:index.html.twig');
     }
 	
 	public function voirAction($id)
