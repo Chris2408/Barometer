@@ -1,0 +1,4 @@
+bcc_quizz:
+    resource: "@bccQuizzBundle/Resources/config/routing.yml"
+    prefix:   /
+
