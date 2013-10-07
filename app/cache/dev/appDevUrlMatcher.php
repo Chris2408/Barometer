@@ -143,6 +143,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'bcc_quizz_voir')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::seeAction',));
         }
 
+        // sdzblog_ajouter
+        if ($pathinfo === '/add') {
+            return array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::addAction',  '_route' => 'sdzblog_ajouter',);
+        }
+
+        // sdzblog_modifier
+        if (0 === strpos($pathinfo, '/modifie') && preg_match('#^/modifie/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'sdzblog_modifier')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::modifieAction',));
+        }
+
+        // sdzblog_supprimer
+        if (0 === strpos($pathinfo, '/delete') && preg_match('#^/delete/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'sdzblog_supprimer')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::deleteAction',));
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

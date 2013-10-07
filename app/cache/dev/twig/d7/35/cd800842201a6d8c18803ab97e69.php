@@ -1,7 +1,7 @@
 <?php
 
-/* bccQuizzBundle:Quizz:see.html.twig */
-class __TwigTemplate_a0b4431c43f7c2b65d8eaac3beabfc4c extends Twig_Template
+/* bccQuizzBundle:Quizz:delete.html.twig */
+class __TwigTemplate_d735cd800842201a6d8c18803ab97e69 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -22,7 +22,7 @@ class __TwigTemplate_a0b4431c43f7c2b65d8eaac3beabfc4c extends Twig_Template
 </head>
 
 <body>
-Here we see the question ";
+Here we delete the question ";
         // line 7
         echo twig_escape_filter($this->env, (isset($context["id"]) ? $context["id"] : $this->getContext($context, "id")), "html", null, true);
         echo "!
@@ -34,7 +34,7 @@ Here we see the question ";
 
     public function getTemplateName()
     {
-        return "bccQuizzBundle:Quizz:see.html.twig";
+        return "bccQuizzBundle:Quizz:delete.html.twig";
     }
 
     public function isTraitable()
