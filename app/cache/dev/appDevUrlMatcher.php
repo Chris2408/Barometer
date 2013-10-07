@@ -133,6 +133,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // bcc_user_homepage
+        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'bcc_user_homepage')), array (  '_controller' => 'bcc\\UserBundle\\Controller\\DefaultController::indexAction',));
+        }
+
         // bcc_quizz_homepage
         if (preg_match('#^/(?P<page>\\d*)?$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'bcc_quizz_homepage')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::indexAction',  'page' => 1,));

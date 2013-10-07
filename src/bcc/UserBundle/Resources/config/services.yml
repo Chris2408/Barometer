@@ -1,0 +1,7 @@
+parameters:
+#    bcc_user.example.class: bcc\UserBundle\Example
+
+services:
+#    bcc_user.example:
+#        class: %bcc_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
