@@ -16,7 +16,16 @@ class __TwigTemplate_8cdc0a8241c8515c34856e957d3a0780 extends Twig_Template
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "Hello !
+        echo "<html>
+<head>
+
+</head>
+
+<body>
+Hello !
+</body>
+
+</html>
 ";
     }
 

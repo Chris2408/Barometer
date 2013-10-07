@@ -13,7 +13,15 @@ be6b1c,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170695,
 a23750,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170769,
 4fb2f5,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170769,
 d5035a,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170814,
+<<<<<<< HEAD
+7731f2,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381171439,
+=======
 >>>>>>> f16217536da1384bf80d91a5197c95888367c2c0
 4a9316,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381139328,
+<<<<<<< HEAD
 efff7a,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381139420,
 053a50,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381139513,
+=======
+>>>>>>> fbd2f7392259e0e3a2690591d9f7f4f9e71cfa12
+>>>>>>> 11f92289f8bc2f1ef5d93bcb3a82a5db58cb44c4
+1dce9b,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381139726,
