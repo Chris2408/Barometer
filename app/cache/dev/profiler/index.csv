@@ -1,5 +1,11 @@
 b2e256,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381168546,
 6fd741,::1,GET,http://localhost/Barometer/web/app_dev.php/hello/winzou,1381169009,
+<<<<<<< HEAD
+1e6583,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381137818,
+890f73,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381137818,
+4d5552,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381138794,
+32d03a,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381138794,
+=======
 ba36eb,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170370,
 d730f7,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170370,
 67e87b,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170695,
@@ -7,4 +13,9 @@ be6b1c,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170695,
 a23750,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170769,
 4fb2f5,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170769,
 d5035a,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381170814,
+<<<<<<< HEAD
 7731f2,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381171439,
+=======
+>>>>>>> f16217536da1384bf80d91a5197c95888367c2c0
+4a9316,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381139328,
+>>>>>>> fbd2f7392259e0e3a2690591d9f7f4f9e71cfa12
