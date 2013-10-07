@@ -20,6 +20,7 @@
       <parameter key="JMSDiExtraBundle">JMS\DiExtraBundle\JMSDiExtraBundle</parameter>
       <parameter key="JMSSecurityExtraBundle">JMS\SecurityExtraBundle\JMSSecurityExtraBundle</parameter>
       <parameter key="bccQuizzBundle">bcc\QuizzBundle\bccQuizzBundle</parameter>
+      <parameter key="bccUserBundle">bcc\UserBundle\bccUserBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -393,7 +394,7 @@
     <parameter key="assetic.read_from">C:/wamp/www/Barometer/app/../web</parameter>
     <parameter key="assetic.write_to">C:/wamp/www/Barometer/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
-    <parameter key="assetic.java.bin">C:\WINDOWS\system32\java.EXE</parameter>
+    <parameter key="assetic.java.bin">C:\Program Files (x86)\Java\jdk1.7.0_40\bin\java.EXE</parameter>
     <parameter key="assetic.node.bin">/usr/bin/node</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
@@ -487,13 +488,8 @@
     <parameter key="jms_di_extra.disable_grep">false</parameter>
     <parameter key="jms_di_extra.doctrine_integration">true</parameter>
     <parameter key="jms_di_extra.cache_warmer.controller_file_blacklist" type="collection"/>
-<<<<<<< HEAD
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52528e43af9e2.php</parameter>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager52528e43af9e2_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
-=======
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_5253044395fd4.php</parameter>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager5253044395fd4_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
->>>>>>> 22882a5e2d88cdfa153db9b0dd13abb72c579d8a
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52529cd82a46e.php</parameter>
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager52529cd82a46e_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
     <parameter key="security.secured_services" type="collection"/>
     <parameter key="security.access.method_interceptor.class">JMS\SecurityExtraBundle\Security\Authorization\Interception\MethodSecurityInterceptor</parameter>
     <parameter key="security.access.method_access_control" type="collection"/>
@@ -1608,11 +1604,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-<<<<<<< HEAD
-            <argument>52528e4374530</argument>
-=======
-            <argument>5253044362568</argument>
->>>>>>> 22882a5e2d88cdfa153db9b0dd13abb72c579d8a
+            <argument>52529cd7f2c28</argument>
           </service>
         </argument>
       </argument>
@@ -1884,11 +1876,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-<<<<<<< HEAD
-            <argument>52528e4374530</argument>
-=======
-            <argument>5253044362568</argument>
->>>>>>> 22882a5e2d88cdfa153db9b0dd13abb72c579d8a
+            <argument>52529cd7f2c28</argument>
             <argument type="service" id="monolog.logger.security"/>
           </service>
         </argument>
@@ -2272,13 +2260,8 @@
       <argument type="collection"/>
       <argument type="collection"/>
     </service>
-<<<<<<< HEAD
-    <service id="doctrine.orm.default_entity_manager" class="EntityManager52528e43af9e2_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
-      <file>C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52528e43af9e2.php</file>
-=======
-    <service id="doctrine.orm.default_entity_manager" class="EntityManager5253044395fd4_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
-      <file>C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_5253044395fd4.php</file>
->>>>>>> 22882a5e2d88cdfa153db9b0dd13abb72c579d8a
+    <service id="doctrine.orm.default_entity_manager" class="EntityManager52529cd82a46e_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
+      <file>C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52529cd82a46e.php</file>
       <argument type="service">
         <service class="Doctrine\ORM\EntityManager" factory-method="create" public="false">
           <argument type="service" id="doctrine.dbal.default_connection"/>
@@ -2783,6 +2766,10 @@
       <call method="addPath">
         <argument>C:\wamp\www\Barometer\src\bcc\QuizzBundle/Resources/views</argument>
         <argument>bccQuizz</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\wamp\www\Barometer\src\bcc\UserBundle/Resources/views</argument>
+        <argument>bccUser</argument>
       </call>
       <call method="addPath">
         <argument>C:\wamp\www\Barometer\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>
