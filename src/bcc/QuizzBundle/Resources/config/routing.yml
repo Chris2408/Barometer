@@ -4,6 +4,6 @@ bcc_quizz_homepage:
     requirements:
         page:  \d*
 
-sdzblog_voir:
+bcc_quizz_voir:
     path:      /question/{id}
-    defaults:  { _controller: bccQuizzBundle:Quizz:voir }
+    defaults:  { _controller: bccQuizzBundle:Quizz:see }
