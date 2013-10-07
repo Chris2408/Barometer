@@ -103,7 +103,20 @@ de5e64,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381177670,
 7b00b1,::1,GET,http://localhost/Barometer/web/app_dev.php/0,1381177677,
 24484a,::1,GET,http://localhost/Barometer/web/app_dev.php/0,1381177677,
 5615a8,::1,GET,http://localhost/Barometer/web/app_dev.php/2,1381177682,
+<<<<<<< HEAD
+d3b70f,::1,GET,http://localhost/Barometer/web/app_dev.php/2,1381177890,
+7f2f5e,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381177898,
+d1e54e,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381177898,
+b01c4f,::1,GET,http://localhost/Barometer/web/app_dev.php/1,1381177907,
+a8be1b,::1,GET,http://localhost/Barometer/web/app_dev.php/132,1381177916,
+30bee9,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381177925,
+055b34,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381177925,
+9ace8e,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381178370,
+685032,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381178370,
+812d89,::1,GET,http://localhost/Barometer/web/app_dev.php/1,1381178375,
+=======
 >>>>>>> 807ec43c075f3e82e640a73f13aafe5262d5ecbc
+<<<<<<< HEAD
 d07053,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381146410,
 1c8243,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381146410,
 3f9163,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381146458,
@@ -120,3 +133,10 @@ b0bbad,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381146846,
 42ca8c,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381146846,
 eb00bc,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381146912,
 683f3c,::1,GET,http://localhost/Barometer/web/app_dev.php/,1381146912,
+=======
+>>>>>>> 199f5e9984d006ac4d8e4f8e16b883431ada43e0
+a51682,::1,GET,http://localhost/Barometer/web/app_dev.php/1,1381178931,
+93c19b,::1,GET,http://localhost/Barometer/web/app_dev.php/1,1381178931,
+13b361,::1,GET,http://localhost/Barometer/web/app_dev.php/1,1381178972,
+85fec9,::1,GET,http://localhost/Barometer/web/app_dev.php/1,1381178972,
+>>>>>>> a06ef648d2f3077d4f485478a1796e07b74f7396
