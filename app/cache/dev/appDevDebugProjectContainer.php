@@ -283,27 +283,11 @@ class appDevDebugProjectContainer extends Container
      * This service is shared.
      * This method always returns the same instance of the service.
      *
-<<<<<<< HEAD
      * @return EntityManager525393a328946_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager525393a328946_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
      */
     protected function getDoctrine_Orm_DefaultEntityManagerService()
     {
         require_once 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_525393a328946.php';
-=======
-<<<<<<< HEAD
-     * @return EntityManager52536fc832ac6_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager52536fc832ac6_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
-     */
-    protected function getDoctrine_Orm_DefaultEntityManagerService()
-    {
-        require_once 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52536fc832ac6.php';
-=======
-     * @return EntityManager52532c2cad795_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager52532c2cad795_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
-     */
-    protected function getDoctrine_Orm_DefaultEntityManagerService()
-    {
-        require_once 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52532c2cad795.php';
->>>>>>> 832e3cbb0de236ff71e949e626f6267b1836308f
->>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
 
         $a = new \Doctrine\Common\Cache\ArrayCache();
         $a->setNamespace('sf2orm_default_8e8d4f2db7870693eb08e01b6751d397');
@@ -330,15 +314,7 @@ class appDevDebugProjectContainer extends Container
         $e = call_user_func(array('Doctrine\\ORM\\EntityManager', 'create'), $this->get('doctrine.dbal.default_connection'), $d);
         $this->get('doctrine.orm.default_manager_configurator')->configure($e);
 
-<<<<<<< HEAD
         return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager525393a328946_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($e, $this);
-=======
-<<<<<<< HEAD
-        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager52536fc832ac6_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($e, $this);
-=======
-        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager52532c2cad795_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($e, $this);
->>>>>>> 832e3cbb0de236ff71e949e626f6267b1836308f
->>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
     }
 
     /**
@@ -1671,25 +1647,13 @@ class appDevDebugProjectContainer extends Container
 
         $h = new \Symfony\Component\Security\Http\HttpUtils($d, $d);
 
-<<<<<<< HEAD
         $i = new \Symfony\Component\Security\Http\Firewall\LogoutListener($b, $h, new \Symfony\Component\Security\Http\Logout\DefaultLogoutSuccessHandler($h, '/blog'), array('csrf_parameter' => '_csrf_token', 'intention' => 'logout', 'logout_path' => 'logout'));
-=======
-<<<<<<< HEAD
-        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($d, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $e), 'main', $a, $this->get('event_dispatcher')), 2 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '52536fc7ef9a6', $a), 3 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $d, $this->get('security.authentication.manager'))), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), new \Symfony\Component\Security\Http\HttpUtils($c, $c), 'main', NULL, NULL, NULL, $a));
-=======
-        $i = new \Symfony\Component\Security\Http\Firewall\LogoutListener($b, $h, new \Symfony\Component\Security\Http\Logout\DefaultLogoutSuccessHandler($h, '/'), array('csrf_parameter' => '_csrf_token', 'intention' => 'logout', 'logout_path' => 'logout'));
->>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
         $i->addHandler(new \Symfony\Component\Security\Http\Logout\SessionLogoutHandler());
 
         $j = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationSuccessHandler($h, array('login_path' => 'login', 'always_use_default_target_path' => false, 'default_target_path' => '/', 'target_path_parameter' => '_target_path', 'use_referer' => false));
         $j->setProviderKey('main');
 
-<<<<<<< HEAD
         return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($g, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $this->get('security.user.provider.concrete.in_memory')), 'main', $a, $c), 2 => $i, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $f, new \Symfony\Component\Security\Http\Session\SessionAuthenticationStrategy('migrate'), $h, 'main', $j, new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler($e, $h, array('login_path' => 'login', 'failure_path' => NULL, 'failure_forward' => false, 'failure_path_parameter' => '_failure_path'), $a), array('check_path' => 'login_check', 'use_forward' => false, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'intention' => 'authenticate', 'post_only' => true), $a, $c), 4 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '525393a2e414e', $a), 5 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $g, $f)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $h, 'main', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $h, 'login', false), NULL, NULL, $a));
-=======
-        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($g, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $this->get('security.user.provider.concrete.in_memory')), 'main', $a, $c), 2 => $i, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $f, new \Symfony\Component\Security\Http\Session\SessionAuthenticationStrategy('migrate'), $h, 'main', $j, new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler($e, $h, array('login_path' => 'login', 'failure_path' => NULL, 'failure_forward' => false, 'failure_path_parameter' => '_failure_path'), $a), array('check_path' => 'login_check', 'use_forward' => false, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'intention' => 'authenticate', 'post_only' => true), $a, $c), 4 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '52532c2c6810d', $a), 5 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $g, $f)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $h, 'main', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $h, 'login', false), NULL, NULL, $a));
->>>>>>> 832e3cbb0de236ff71e949e626f6267b1836308f
->>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
     }
 
     /**
@@ -2845,15 +2809,7 @@ class appDevDebugProjectContainer extends Container
     /**
      * Gets the doctrine.orm.entity_manager service alias.
      *
-<<<<<<< HEAD
      * @return EntityManager525393a328946_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
-=======
-<<<<<<< HEAD
-     * @return EntityManager52536fc832ac6_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
-=======
-     * @return EntityManager52532c2cad795_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
->>>>>>> 832e3cbb0de236ff71e949e626f6267b1836308f
->>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
      */
     protected function getDoctrine_Orm_EntityManagerService()
     {
@@ -3067,15 +3023,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSecurity_Authentication_ManagerService()
     {
-<<<<<<< HEAD
         $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('security.user.provider.concrete.in_memory'), new \Symfony\Component\Security\Core\User\UserChecker(), 'main', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('525393a2e414e')), true);
-=======
-<<<<<<< HEAD
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('52536fc7ef9a6')), true);
-=======
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('security.user.provider.concrete.in_memory'), new \Symfony\Component\Security\Core\User\UserChecker(), 'main', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('52532c2c6810d')), true);
->>>>>>> 832e3cbb0de236ff71e949e626f6267b1836308f
->>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
 
         $instance->setEventDispatcher($this->get('event_dispatcher'));
 
@@ -3775,18 +3723,8 @@ class appDevDebugProjectContainer extends Container
             'jms_di_extra.cache_warmer.controller_file_blacklist' => array(
 
             ),
-<<<<<<< HEAD
             'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_525393a328946.php',
             'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager525393a328946_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
-=======
-<<<<<<< HEAD
-            'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52536fc832ac6.php',
-            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager52536fc832ac6_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
-=======
-            'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/wamp/www/Barometer/app/cache/dev/jms_diextra/doctrine/EntityManager_52532c2cad795.php',
-            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager52532c2cad795_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
->>>>>>> 832e3cbb0de236ff71e949e626f6267b1836308f
->>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
             'security.secured_services' => array(
 
             ),

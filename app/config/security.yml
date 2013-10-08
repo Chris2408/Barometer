@@ -31,11 +31,7 @@ security:
                 check_path: login_check
             logout:
                 path:   logout
-<<<<<<< HEAD
                 target: /blog
-=======
-                target: / #destination sur la page lors du logout
->>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
 
     access_control:
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
