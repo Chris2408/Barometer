@@ -1,0 +1,7 @@
+<h3>Les dernières questions</h3>
+ 
+<ul class="nav nav-pills nav-stacked">
+  {% for article in liste_articles %}
+    <li><a href="{{ path('bcc_quizz_see', {'id': article.id}) }}">{{ article.titre }}</a></li>
+  {% endfor %}
+</ul>

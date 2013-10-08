@@ -4,21 +4,21 @@ bcc_quizz_homepage:
     requirements:
         page:  \d*
 
-bcc_quizz_voir:
+bcc_quizz_see:
     path:      /question/{id}
     defaults:  { _controller: bccQuizzBundle:Quizz:see }
 
-sdzblog_ajouter:
+bcc_quizz_add:
     path:      /add
     defaults:  { _controller: bccQuizzBundle:Quizz:add }
 
-sdzblog_modifier:
+bcc_quizz_modifie:
     path:      /modifie/{id}
     defaults:  { _controller: bccQuizzBundle:Quizz:modifie }
     requirements:
         id:  \d+
 
-sdzblog_supprimer:
+bcc_quizz_delete:
     path:      /delete/{id}
     defaults:  { _controller: bccQuizzBundle:Quizz:delete }
     requirements:

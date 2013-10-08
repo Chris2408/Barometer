@@ -138,24 +138,45 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'bcc_quizz_homepage')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::indexAction',  'page' => 1,));
         }
 
-        // bcc_quizz_voir
+        // bcc_quizz_see
         if (0 === strpos($pathinfo, '/question') && preg_match('#^/question/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'bcc_quizz_voir')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::seeAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'bcc_quizz_see')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::seeAction',));
         }
 
-        // sdzblog_ajouter
+        // bcc_quizz_add
         if ($pathinfo === '/add') {
-            return array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::addAction',  '_route' => 'sdzblog_ajouter',);
+            return array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::addAction',  '_route' => 'bcc_quizz_add',);
         }
 
-        // sdzblog_modifier
+        // bcc_quizz_modifie
         if (0 === strpos($pathinfo, '/modifie') && preg_match('#^/modifie/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'sdzblog_modifier')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::modifieAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'bcc_quizz_modifie')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::modifieAction',));
         }
 
-        // sdzblog_supprimer
+        // bcc_quizz_delete
         if (0 === strpos($pathinfo, '/delete') && preg_match('#^/delete/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'sdzblog_supprimer')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::deleteAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'bcc_quizz_delete')), array (  '_controller' => 'bcc\\QuizzBundle\\Controller\\QuizzController::deleteAction',));
+        }
+
+        if (0 === strpos($pathinfo, '/log')) {
+            if (0 === strpos($pathinfo, '/login')) {
+                // login
+                if ($pathinfo === '/login') {
+                    return array (  '_controller' => 'bcc\\UserBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login',);
+                }
+
+                // login_check
+                if ($pathinfo === '/login_check') {
+                    return array('_route' => 'login_check');
+                }
+
+            }
+
+            // logout
+            if ($pathinfo === '/logout') {
+                return array('_route' => 'logout');
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
