@@ -1,3 +1,7 @@
+bcc_user:
+    resource: "@bccUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
 bcc_quizz:
     resource: "@bccQuizzBundle/Resources/config/routing.yml"
     prefix:   /
@@ -5,9 +9,16 @@ bcc_quizz:
 login:
     pattern:   /login
     defaults:  { _controller: bccUserBundle:Security:login }
+<<<<<<< HEAD
  
 login_check:
     pattern:   /login_check
  
+=======
+
+login_check:
+    pattern:   /login_check
+
+>>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
 logout:
     pattern:   /logout

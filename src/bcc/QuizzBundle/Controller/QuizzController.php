@@ -2,6 +2,7 @@
 
 namespace bcc\QuizzBundle\Controller;
 
+<<<<<<< HEAD
 // Pensez à rajouter ce use pour l'exception qu'on utilise
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 // Plus besoin de rajouter le use de l'exception dans ce cas
@@ -9,11 +10,15 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 //use JMS\SecurityExtraBundle\Annotation\Secure;
  
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+=======
+use Barometer\Bundle\FrameworkBundle\Controller\Controller;
+>>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
 
 class QuizzController extends Controller
 {
-    public function indexAction()
+    public function indexAction($page)
     {
+<<<<<<< HEAD
     	
 		// Les articles :
   $questions = array(
@@ -41,6 +46,21 @@ class QuizzController extends Controller
 return $this->render('bccQuizzBundle:Quizz:index.html.twig', array(
   'questions' => $questions
 ));
+=======
+    	// On ne sait pas combien de pages il y a
+    // Mais on sait qu'une page doit être supérieure ou égale à 1
+    if( $page < 1 )
+    {
+      // On déclenche une exception NotFoundHttpException
+      // Cela va afficher la page d'erreur 404 (on pourra personnaliser cette page plus tard d'ailleurs)
+      throw $this->createNotFoundException('Page inexistante (page = '.$page.')');
+    }
+ 
+    // Ici, on récupérera la liste des articles, puis on la passera au template
+ 
+    // Mais pour l'instant, on ne fait qu'appeler le template
+    return $this->render('bccQuizzBundle:Quizz:index.html.twig');
+>>>>>>> b7704d4d5bdb96a86b524ea86bbe73181c538f7c
     }
 	
 	public function seeAction($id)
