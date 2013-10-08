@@ -25,6 +25,13 @@ security:
         main:
             pattern:   ^/
             anonymous: true
+            provider:  in_memory
+            form_login:
+                login_path: login
+                check_path: login_check
+            logout:
+                path:   logout
+                target: / #destination sur la page lors du logout
 
     access_control:
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }

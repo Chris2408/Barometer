@@ -1,0 +1,25 @@
+bcc_quizz_homepage:
+    pattern:  /{page}
+    defaults: { _controller: bccQuizzBundle:Quizz:index, page: 1 }
+    requirements:
+        page:  \d*
+
+bcc_quizz_voir:
+    path:      /question/{id}
+    defaults:  { _controller: bccQuizzBundle:Quizz:see }
+
+sdzblog_ajouter:
+    path:      /add
+    defaults:  { _controller: bccQuizzBundle:Quizz:add }
+
+sdzblog_modifier:
+    path:      /modifie/{id}
+    defaults:  { _controller: bccQuizzBundle:Quizz:modifie }
+    requirements:
+        id:  \d+
+
+sdzblog_supprimer:
+    path:      /delete/{id}
+    defaults:  { _controller: bccQuizzBundle:Quizz:delete }
+    requirements:
+        id:  \d+
