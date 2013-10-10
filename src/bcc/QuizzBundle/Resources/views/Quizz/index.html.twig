@@ -1,0 +1,23 @@
+{% extends "bccQuizzBundle::layout.html.twig" %}
+ 
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+ 
+{% block bccQuizz_body %}
+ 
+  <h2>Liste des questions</h2>
+ 
+  <ul>
+    {% for question in questions %}
+      <li>
+        <a href="{{ path('bcc_quizz_see', {'id': question.id}) }}">{{ question.titre }}</a>
+        par {{ question.auteur }},
+        le {{ question.date|date('d/m/Y') }}
+      </li>
+    {% else %}
+      <li>Pas (encore !) de questions</li>
+    {% endfor %}
+  </ul>
+ 
+{% endblock %}

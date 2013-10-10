@@ -1,0 +1,7 @@
+parameters:
+#    bcc_quizz.example.class: bcc\QuizzBundle\Example
+
+services:
+#    bcc_quizz.example:
+#        class: %bcc_quizz.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

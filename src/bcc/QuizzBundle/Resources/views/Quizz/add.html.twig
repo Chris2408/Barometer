@@ -1,0 +1,17 @@
+{% extends "bccQuizzBundle::layout.html.twig" %}
+ 
+{% block title %}
+  Ajouter une question - {{ parent() }}
+{% endblock %}
+ 
+{% block bccQuizz_body %}
+ 
+  <h2>Ajouter une question</h2>
+ 
+  {% include "bccQuizzBundle:Quizz:formulaire.html.twig" %}
+ 
+  <p>
+    Vous ajouter une question.
+  </p>
+
+{% endblock %}
