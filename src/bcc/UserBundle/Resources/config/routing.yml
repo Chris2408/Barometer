@@ -1,3 +1,0 @@
-bcc_user_login:
-    path:      /login
-    defaults:  { _controller: bccUserBundle:Security:login }
